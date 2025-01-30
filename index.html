@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Assignment-03</title>
+<!-- Tailwindcss + Daisyui CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Google-Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<!-- Font-Awsome-CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily:{
+            sora: ['Sora', 'serif']
+          },
+        }
+      }
+    }
+  </script>
+
+
+</head>
+<body class="font-sora">
+    <header class=" bg-[#FFF9F4] ">
+      <nav class=" border-b lg:border-none max-w-screen-xl mx-auto">
+        <div class="navbar  w-full  border-b-[#FFDC26] ">
+          <div class="navbar-start">
+            <!-- header-logo-->
+            <div class="flex items-center gap-2">
+              <!-- logo-img -->
+              <div>
+                <img src="c1-assets/logo-header.png" alt="">
+              </div>
+              <!-- logo-text -->
+              <div>
+                <h3 class="text-2xl lg:block hidden ">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 gap-8">
+              <li><a class="text-xl text-[#111111]"  href="#">Find a pet</a></li>
+              <li><a class="text-xl text-[#111111]"  href="#">Breeds</a></li>
+              <li><a class="text-xl text-[#111111]"  href="#">Contact us</a></li>
+            </ul>
+          </div>
+        
+          <div class=" navbar-end  flex space-x-8">
+            <div class="flex">
+              <a href="#" class=""><i class="fa-regular fa-bell gap-6 px-5 text-2xl hidden lg:block"></i></a>
+              <a href="#" class=""><i class="fa-solid fa-magnifying-glass text-2xl hidden lg:block"></i></a>
+            </div>
+            <div class="space-x-5 flex">
+              
+              <button class="btn btn-outline rounded-lg px-8 py-3  hidden lg:block">login</button>
+              <button class="btn bg-[#FFDC26] text-black px-8 py-3 hidden lg:block ">Register</button>
+              <a href="" class=""><i class="fa-solid fa-bars text-3xl py-2 lg:hidden md:hidden"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+               
+</body>
+</html>
